@@ -2,7 +2,7 @@
 import express from "express";
   
 // import function from controller
-import { showEmploye } from "../controllers/employe.controller.js";
+import { showEmploye,deleteEmploye } from "../controllers/employe.controller.js";
   
 // init express router
 const router = express.Router();
@@ -15,3 +15,6 @@ router.get('/employes', showEmploye);
   
 // export default router
 export default router;
+
+// Delete Employe
+router.delete('/employes/:id', deleteEmploye);
