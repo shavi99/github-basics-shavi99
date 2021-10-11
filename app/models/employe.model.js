@@ -23,3 +23,15 @@ export const deleteEmployeById = (id, result) => {
         }
     });   
 }
+// Insert Employe to Database
+export const insertEmploye = (data, result) => {
+    db.query("INSERT INTO employe SET ?", [data], (err, results) => {             
+        if(err) {
+            console.log(err);
+            result(err, null);
+        } else {
+            result(null, results);
+        }
+    });   
+}
+  
