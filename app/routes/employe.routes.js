@@ -2,7 +2,7 @@
 import express from "express";
   
 // import function from controller
-import { showEmploye,deleteEmploye } from "../controllers/employe.controller.js";
+import { showEmploye, deleteEmploye, createEmploye } from "../controllers/employe.controller.js";
   
 // init express router
 const router = express.Router();
@@ -18,3 +18,8 @@ export default router;
 
 // Delete Employe
 router.delete('/employes/:id', deleteEmploye);
+
+  
+// Create New Employe
+router.post('/employes', createEmploye);
+  
