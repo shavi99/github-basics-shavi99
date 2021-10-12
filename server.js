@@ -1,22 +1,16 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
+import Router from "./app/routes/employe.routes.js";
+  
 
 const app = express();
 
-var corsOptions = {
-  origin: "http://localhost:9000"
-};
-
-app.use(cors(corsOptions));
+app.use(express.json());
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Employe Management System." });
-});
-
-const PORT = process.env.PORT || 9000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
-});
+app.use(Router);
+  
+app.listen(8080, () => console.log('Server running at http://localhost:8080'))
