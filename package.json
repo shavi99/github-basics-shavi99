@@ -1,0 +1,27 @@
+{
+  "name": "github-basics-shavi99",
+  "version": "1.0.0",
+  "description": "Employe Management System",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSBM-SPM-2021/github-basics-shavi99.git"
+  },
+  "author": "Amandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSBM-SPM-2021/github-basics-shavi99/issues"
+  },
+  "homepage": "https://github.com/NSBM-SPM-2021/github-basics-shavi99#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
