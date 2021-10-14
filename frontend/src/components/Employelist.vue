@@ -84,10 +84,12 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Software Project Management - Project 2021
+          Software Project Management - Project 2022
         </p>
       </div>
     </footer>
+
+
 
   </div>
 
